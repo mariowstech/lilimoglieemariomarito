@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Per Amoree 💘</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* -------- CUORI BACKGROUND -------- */
+.hearts {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+    font-size: 20px;
+    animation: floatUp linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0); opacity: 0.6; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+/* -------- CONTENUTO -------- */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* -------- HERO -------- */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mano che saluta */
+.wave {
+    font-size: 60px;
+    animation: waveAnim 1.5s infinite;
+}
+
+@keyframes waveAnim {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(20deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(20deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+/* bottone */
+.btn {
+    margin-top: 40px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* -------- TIMELINE -------- */
+.timeline {
+    padding: 30px 15px;
+}
+
+.card {
+    margin: 60px 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 0.8s ease;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img {
+    width: 90%;
+    max-width: 250px;
+    border-radius: 12px;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.typing {
+    border-right: 2px solid white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* data */
+.date {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- CUORI -->
+<div class="hearts" id="hearts"></div>
+
+<div class="container">
+
+<!-- HERO -->
+<section class="hero">
+    <div class="wave">👋</div>
+    <h1 class="typing" data-text="CIAOO AMOREE"></h1>
+    <button class="btn" onclick="scrollToTimeline()">→</button>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline" id="timeline">
+
+    <div class="card">
+        <img src="assets/foto1.jpg">
+        <div class="text typing" data-text="LA PRIMA FOTO NOSTRAA"></div>
+        <div class="date">25/12/2025</div>
+    </div>
+
+    <div class="card">
+        <img src="assets/foto2.jpg">
+        <div class="text typing" data-text="PRIMA FOTOBACINOO OYEAH"></div>
+        <div class="date">27/12/2025</div>
+    </div>
+
+    <div class="card">
+        <img src="assets/foto3.jpg">
+        <div class="text typing" data-text="nannanannosa"></div>
+        <div class="date">27/12/2025</div>
+    </div>
+
+    <div class="card">
+        <img src="assets/foto4.jpg">
+        <div class="text typing" data-text="YAYAYAYAY BACINO DI SANVALENTINOO"></div>
+        <div class="date">14/02/2026</div>
+    </div>
+
+    <div class="card">
+        <img src="assets/foto5.jpg">
+        <div class="text typing" data-text="PIGIAMINOO"></div>
+        <div class="date">14/02/2026</div>
+    </div>
+    
+    <div class="card">
+        <img src="assets/foto6.jpg">
+        <div class="text typing" data-text="OCCHIETTO"></div>
+        <div class="date">15/02/2026</div>
+    </div>    
+
+    <div class="card">
+        <img src="assets/foto7.jpeg">
+        <div class="text typing" data-text="😛"></div>
+        <div class="date">15/02/2026</div>
+    </div>    
+
+    <div class="card">
+        <img src="assets/foto8.jpeg">
+        <div class="text typing" data-text="MORSETTI"></div>
+        <div class="date">15/02/2026</div>
+    </div>
+    
+    <div class="card">
+        <img src="assets/foto9.jpg">
+        <div class="text typing" data-text="🫰🏿"></div>
+        <div class="date">15/02/2026</div>
+    </div>    
+
+    <div class="card">
+        <img src="assets/foto10.jpg">
+        <div class="text typing" data-text="ALTRA NANNA OYEAH"></div>
+        <div class="date">14/02/2026</div>
+    </div>  
+
+
+    <div class="card">
+        <img src="assets/foto11.jpg">
+        <div class="text typing" data-text="GUARDA COME SEI BELLA AMORE"></div>
+        <div class="date">15/02/2026</div>
+    </div>      
+
+    <div class="card">
+        <img src="assets/foto12.jpg">
+        <div class="text typing" data-text="🫂🫂"></div>
+        <div class="date">15/02/2026</div>
+    </div>      
+
+    <div class="card">
+        <img src="assets/foto13.jpeg">
+        <div class="text typing" data-text="ELELLELELEL"></div>
+        <div class="date">15/02/2026</div>
+    </div> 
+
+    <div class="card">
+        <img src="assets/foto14.jpg">
+        <div class="text typing" data-text="ultima foto prima che tornavi :c"></div>
+        <div class="date">15/02/2026</div>
+    </div> 
+</section>
+
+</div>
+
+<script>
+/* SCROLL */
+function scrollToTimeline() {
+    document.getElementById("timeline").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+/* ANIMAZIONE SCROLL */
+const cards = document.querySelectorAll('.card');
+
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < window.innerHeight - 50) {
+            card.classList.add('show');
+        }
+    });
+});
+
+/* TYPING EFFECT */
+function typeWriter(element) {
+    const text = element.getAttribute("data-text");
+    let i = 0;
+
+    function typing() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, 50);
+        } else {
+            // 🔥 rimuove il cursore quando finisce
+            element.style.borderRight = "none";
+        }
+    }
+
+    typing();
+}
+
+document.querySelectorAll('.typing').forEach(el => {
+    typeWriter(el);
+});
+
+/* CUORI RANDOM */
+const heartsContainer = document.getElementById('hearts');
+
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '💗';
+
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = (3 + Math.random() * 5) + 's';
+    heart.style.fontSize = (15 + Math.random() * 20) + 'px';
+
+    heartsContainer.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
+}
+
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
